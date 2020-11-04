@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head><title>Family Album</title></head>
+        <h1>My Family Album</h1>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg" id= "Image1">
+        <div> <h3 id="Text1">The Lenka Family</h3> 
+          <button id="button1" type="button" onclick="next()"> Next ⏭ </button>
+         </div>
+    </body>
+    <script>
+        var images=["https://images-na.ssl-images-amazon.com/images/I/61zTGIEvQoL.jpg","https://st.depositphotos.com/1724125/2693/v/450/depositphotos_26930203-stock-illustration-cartoon-dad.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS2ojerskOAtao_3TOF-2SyAJVo7ncxqeraCw&usqp=CAU","https://thumbs.dreamstime.com/z/isolated-grandfather-cartoon-isolated-grandfather-cartoon-wooden-walking-stick-vector-159368469.jpg","https://thumbs.dreamstime.com/z/isolated-grandmother-cartoon-isolated-grandmother-cartoon-wooden-walking-stick-vector-159368527.jpg","https://cdn4.vectorstock.com/i/1000x1000/46/13/cute-grandfather-cartoon-vector-17814613.jpg","https://previews.123rf.com/images/jemastock/jemastock1710/jemastock171000488/87223963-cute-grandmother-cartoon-icon-vector-illustration-graphic-design.jpg"];
+        var members=["The Lenka Family","Arabinda Lenka, My Dad ","Shradhanjali Nayak, My Mom","(My paternal Grandfather)","(My paternal Grandmother)","(My maternal Grandfather)","(My maternal Grandmother)"];
+        var i =0 ;
+        function next() {
+          if(i==7)
+         {
+           i=0;
+         }  
+          document.getElementById("Image1").src=images[i];
+          document.getElementById("Text1").textContent=members[i];
+          i++ ;
+        }
+      </script>
+<style>
+   body { text-align : center ;
+       background-color : #F0F4C3 ;
+}
+#Image1 { height : 300px ;
+          width : 300px ; 
+}
+</style>
+</html>
